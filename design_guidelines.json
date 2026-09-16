@@ -1,0 +1,197 @@
+{
+  "project_name": "Harmeet Kour - Awwwards-Grade Personal Portfolio & Professional History",
+  "app_type": "portfolio",
+  "theme": "dark",
+  "target_audience": "Tech Recruiters, Engineering Managers, Tech Executives, Product Leaders",
+  "emotional_tone": "High-craft, authoritative, ultra-modern, cinematic, precision-engineered",
+  "design_archetype": "ARCHETYPE 7 / SWISS HYBRID - Performance Kinetic Dark",
+
+  "typography": {
+    "font_family_heading": "Syne, Clash Display, or Space Grotesk (Display Sans with attitude)",
+    "font_family_body": "Plus Jakarta Sans or Inter (Clean, highly legible body)",
+    "font_family_mono": "JetBrains Mono or Fira Code (For metrics, tech stack tags, timestamps)",
+    "font_weights": {
+      "hero_title": "font-black tracking-tight",
+      "section_heading": "font-bold tracking-tight",
+      "subheading": "font-medium tracking-normal",
+      "body": "font-normal leading-relaxed",
+      "label": "font-semibold uppercase tracking-[0.2em] text-xs"
+    },
+    "hierarchy_scale": {
+      "hero_h1": "text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.05]",
+      "section_h2": "text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight",
+      "card_h3": "text-xl sm:text-2xl font-semibold",
+      "body_text": "text-sm sm:text-base text-zinc-400 leading-relaxed",
+      "caption_mono": "font-mono text-xs sm:text-sm text-cyan-400/90"
+    }
+  },
+
+  "colors": {
+    "palette_name": "Cybernetic Obsidian & Electric Electric Cyan / Violet Flare",
+    "background_primary": "#0A0A0E (Deep Void Black)",
+    "background_secondary": "#12121A (Elevated Slate Void)",
+    "background_card": "#181824 / rgba(255,255,255,0.03)",
+    "text_primary": "#F4F4F6 (Pure High-Contrast White)",
+    "text_secondary": "#A1A1AA (Zinc Muted Light)",
+    "text_tertiary": "#71717A (Subtle Label Tone)",
+    "accent_primary": "#00F0FF (Electric Cyan)",
+    "accent_secondary": "#8B5CF6 (Violet Flare)",
+    "accent_glow": "rgba(0, 240, 255, 0.15)",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_highlight": "rgba(0, 240, 255, 0.3)",
+    "status_success": "#10B981 (Emerald)",
+    "forbidden_colors": ["#7351B7 (Generic Purple)", "#1B93A4 (Teal Blue for Dashboards)"]
+  },
+
+  "layout_and_spacing": {
+    "spacing_scale": "Generous Spacing Scale: p-6, p-8, p-12, p-16, py-24, py-32",
+    "container_max_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_system": {
+      "mode": "MODE A: TETRIS / BENTO ASYMMETRIC GRID",
+      "hero_layout": "Full width kinetic text stack with offset interactive 3D hero card + floating quick metrics",
+      "experience_timeline": "Numbered manifesto chapter layout with sticky timeline bar and interactive expanded roles",
+      "skills_bento": "Asymmetric multi-span layout: Core Stack (col-span-8), DevOps & Tools (col-span-4), Leadership & Soft Skills (col-span-4), Code Architecture (col-span-8)",
+      "projects_grid": "Grid with staggered card heights, custom live preview drawer/modal, GitHub/Live links, metric pills"
+    }
+  },
+
+  "surface_and_textures": {
+    "navigation_header": "Crystal Glassmorphism (bg-black/60 backdrop-blur-2xl border-b border-white/10 z-50)",
+    "cards": "Subtle glassmorphism + 1px tracing line border glow on hover + backdrop-blur-md",
+    "marquee": "Editorial kinetic tape with ultra-slow smooth scroll, high-contrast monospace typography and tech tags",
+    "textures": "Subtle grain noise overlay on dark background to break digital flatness"
+  },
+
+  "motion_and_interactions": {
+    "scroll_engine": "Lenis smooth momentum scrolling (installed or implemented smoothly)",
+    "hero_animation": "Masked line-by-line reveal on load using Framer Motion (staggerChildren: 0.12, duration: 0.8, ease: [0.16, 1, 0.3, 1])",
+    "scroll_reveals": "Scroll-triggered section entry with subtle parallax offset (-20px to +20px)",
+    "micro_interactions": {
+      "buttons": "Hover magnet tilt effect or glow expansion on focus/hover",
+      "cards": "Scale 1.01 with border-cyan-400/50 glow transition on hover",
+      "links": "Animated underline sweep from left to right"
+    },
+    "accessibility": "Respect prefers-reduced-motion, aria-hidden on purely decorative canvas/particles"
+  },
+
+  "key_sections_and_components": {
+    "1_header_nav": {
+      "name": "Floating Glass Navigation Bar",
+      "elements": [
+        "Brand Logo (HK monogram / Harmeet Kour)",
+        "Nav items: About, Experience, Skills, Projects, Education, Contact",
+        "Interactive 'Download CV' CTA button with animated icon",
+        "Availability badge (e.g. 'Open for Senior Roles')"
+      ],
+      "data_testids": ["nav-container", "nav-logo", "nav-link-experience", "nav-link-projects", "nav-link-skills", "nav-link-contact", "download-cv-button"]
+    },
+    "2_hero_section": {
+      "name": "Kinetic Line-Reveal Hero with Interactive 3D/Parallax Element",
+      "elements": [
+        "Masked multi-line text reveal: 'HARMEET KOUR' -> 'Full Stack & Frontend Engineer' -> 'Building High-Performance Web Systems & Elegant User Experiences'",
+        "Live status badge with green pulse indicator ('Based in Tech Capital | Available for hire')",
+        "Interactive 3D Glass Geometric / Mesh card that tilts on mouse movement",
+        "Action CTAs: 'Explore Experience', 'Get in Touch', 'View Resume'",
+        "Key Metrics Pill: '5+ Yrs Experience', '20+ Production Apps', '99.9% Code Quality'"
+      ],
+      "data_testids": ["hero-section", "hero-title", "hero-subtitle", "hero-contact-cta", "hero-experience-cta", "hero-portrait-card"]
+    },
+    "3_editorial_marquee": {
+      "name": "Continuous Kinetic Tech Stack Marquee",
+      "items": ["REACT 19", "TYPESCRIPT", "TAILWIND CSS", "NEXT.JS", "NODE.JS", "PYTHON / FASTAPI", "SYSTEM ARCHITECTURE", "STATE MANAGEMENT", "UI/UX PRECISION"],
+      "data_testids": ["tech-marquee"]
+    },
+    "4_professional_summary": {
+      "name": "Chapter 01 // Executive Profile Manifesto",
+      "description": "Structured manifesto block detailing engineering philosophy, leadership experience, problem-solving approach, and key business impact.",
+      "data_testids": ["summary-section", "manifesto-content"]
+    },
+    "5_experience_timeline": {
+      "name": "Chapter 02 // Work Experience & Career Timeline",
+      "elements": [
+        "Interactive timeline with expandable position cards",
+        "Roles: Senior Frontend Engineer, Full Stack Developer, Software Engineer",
+        "For each role: Company name, timeline dates, key accomplishments in bullet points, metrics/impact tags, stack badges"
+      ],
+      "data_testids": ["experience-section", "experience-card-0", "experience-card-1", "experience-card-2"]
+    },
+    "6_skills_showcase": {
+      "name": "Chapter 03 // Technical Skill Matrix (Bento Grid)",
+      "elements": [
+        "Categorized Skill Bento: Frontend Mastery, Backend & APIs, Architecture & State, Testing & DevOps",
+        "Interactive skill proficiency meters & tech icon tags",
+        "Filter tabs or highlighted core stack"
+      ],
+      "data_testids": ["skills-section", "skill-category-frontend", "skill-category-backend", "skill-category-tools"]
+    },
+    "7_projects_grid": {
+      "name": "Chapter 04 // Featured Software Engineering Projects",
+      "elements": [
+        "Interactive project cards with image preview, live demo link, github repo link, tech tags, and impact stats",
+        "Modal/Drawer for detailed project deep-dive (architecture overview, challenges solved)"
+      ],
+      "data_testids": ["projects-section", "project-card-0", "project-card-1", "project-card-2", "project-details-modal"]
+    },
+    "8_education_certifications": {
+      "name": "Chapter 05 // Education & Credentials",
+      "elements": [
+        "Degree: Bachelor of Science in Computer Science / Software Engineering",
+        "Certifications, Honors, Continuous Learning Badges"
+      ],
+      "data_testids": ["education-section", "education-card-0"]
+    },
+    "9_contact_footer": {
+      "name": "Chapter 06 // Direct Contact & Recruiter Gateway",
+      "elements": [
+        "Massive statement headline: 'LET'S BUILD SOMETHING EXTRAORDINARY'",
+        "Direct action quick links: Email (mailto:), LinkedIn, GitHub, Schedule Intro Call",
+        "Interactive quick message form for recruiters with Sonner toast notification on submission",
+        "Copy-to-clipboard email button with instant toast feedback"
+      ],
+      "data_testids": ["contact-section", "contact-email-btn", "contact-linkedin-link", "contact-github-link", "contact-form-submit-button"]
+    }
+  },
+
+  "image_urls": [
+    {
+      "category": "hero_portrait",
+      "url": "https://images.pexels.com/photos/8100076/pexels-photo-8100076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Professional female tech engineer portrait in moody dark background"
+    },
+    {
+      "category": "project_preview_1",
+      "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzb2Z0d2FyZSUyMGRhc2hib2FyZCUyMGludGVyZmFjZSUyMGRhcmt8ZW58MHx8fHwxNzg5NTQ1MTg3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Analytics dashboard software project preview"
+    },
+    {
+      "category": "project_preview_2",
+      "url": "https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Real-time futuristic data monitoring application"
+    },
+    {
+      "category": "project_preview_3",
+      "url": "https://images.pexels.com/photos/30547574/pexels-photo-30547574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Futuristic 3D digital architecture & workflow engine"
+    }
+  ],
+
+  "instructions_to_main_agent": [
+    "Ensure the design looks like an Awwwards Site of the Day winner with dark kinetic styling.",
+    "Do NOT use generic Inter font for main titles; use Syne, Space Grotesk, or Clash Display via Google Fonts in index.html.",
+    "Implement line-by-line reveal animation on hero load using framer-motion variants.",
+    "Use framer-motion for smooth scroll reveals on all manifesto section titles.",
+    "Ensure every interactive link and button has a data-testid attribute in kebab-case.",
+    "Use sonner for toast notifications when email is copied or contact form is submitted.",
+    "Add a floating sticky nav bar with glassmorphism backdrop blur (backdrop-blur-xl bg-black/60).",
+    "Include a live downloadable resume button and copy email button in header and contact section.",
+    "Ensure full responsiveness across mobile, tablet, and wide desktop viewports."
+  ],
+
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "anti_slop": "Avoid generic centered layouts and standard blue gradients. Maintain deep obsidian backgrounds (#0A0A0E) with razor-sharp 1px subtle borders.",
+    "transitions": "Never use transition: all. Use specific transition classes (e.g. transition-colors duration-200, transition-transform duration-300).",
+    "alignments": "Do not center align the main app container. Maintain left-aligned, structured editorial text flow.",
+    "testing": "All key buttons, inputs, links, and cards MUST include data-testid attributes.",
+    "toasts": "Use sonner for toast notifications (located in components/ui/sonner.tsx)."
+  }
+}
